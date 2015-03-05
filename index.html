@@ -1,59 +1,33 @@
 <!DOCTYPE>
 <html>
+<meta charset='utf8'>
+<link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+<font>
+
 <head>
   <title>Thermostat</title>
 </head>
 
 <body>
 
-  <div id='temperature'></div>
-  <h2>D E G R E E S</h2>
+  <p>
+  <div class="inset">
+    <span><div id='temperature'></div>
+      <h2>D E G R E E S</h2><br>
 
-  <p> 
-    <a href="#" class='increaseTemp button'>+</a> <b>||</b> <a href="#" class ='decreaseTemp button'>-</a><br>
-    <a href="#" class='reset button'>reset</a><br>
-    power saver: 
-    <a href="#" class='powerSaverOn button'>on</a> || <a href="#" class='powerSaverOff button'>off</a>
-  </p>
+      <a href="#" class='increaseTemp button'>+</a> <b>||</b> <a href="#" class ='decreaseTemp button'>-</a><br>
+      <a href="#" class='reset button'>reset</a><br>
+      power saver: 
+      <a href="#" class='powerSaverOn button'>on</a> || <a href="#" class='powerSaverOff button'>off</a>
+    </span></p>
+  </div>
+</div>
 
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="src/Thermostat.js"></script>
-  <script src="jquery.js"></script>
-
-  <script>
-    var thermostat = new Thermostat();
-
-    $(document).ready(function(){
-      $('#temperature').text(thermostat.temp);
-
-      $('.increaseTemp').click(function(){
-        thermostat.increaseTemp();
-        $('#temperature').text(thermostat.temp);
-      });
-
-      $('.decreaseTemp').click(function(){
-        thermostat.decreaseTemp();
-        $('#temperature').text(thermostat.temp);
-      });
-
-      $('.powerSaverOn').click(function(){
-        thermostat.powerSaverOn();
-        $('#temperature').text(thermostat.temp);
-      });
-
-      $('.powerSaverOff').click(function(){
-        thermostat.powerSaverOff();
-        $('#temperature').text(thermostat.temp);
-      });
-
-      $('.reset').click(function(){
-        thermostat.reset();
-        $('#temperature').text(thermostat.temp);
-      });
-
-    });
-
-  </script>
+  <script src="js/Thermostat.js"></script>
+  <script src="js/jquery.js"></script>
 
 </body>
+</font>
 </html>

@@ -1,0 +1,22 @@
+body {
+  margin: 20px;
+  padding: 50;
+  background: url("../public/fireplace.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  text-align: center;
+  font-family: 'Chivo', sans-serif, bold, fixed;
+  font-size: 50px;
+  color: #FFFFF0;
+}
+
+.inset{
+  position: center;
+  width:680px;
+  height:680px;
+  border-radius:1000px;
+  background: rgba(0,0,0,0.8)
+}
