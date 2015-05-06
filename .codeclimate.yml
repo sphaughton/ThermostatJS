@@ -1,0 +1,9 @@
+languages:
+   Ruby: true
+   JavaScript: true
+   Python: true
+   PHP: true
+   CSS: true
+
+exclude_paths:
+- lib/jasmine-2.2.0/*
