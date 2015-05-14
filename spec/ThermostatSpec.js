@@ -6,12 +6,11 @@ describe("Thermostat", function() {
   });
 
   describe("default settings", function() {
-
-    it("should start at 20 degrees", function() {
+    it("start at 20 degrees", function() {
       expect(thermostat.temp).toEqual(20);
      });
 
-    it("the minimum temperature is 10 degrees", function() {
+    it("can only be a minimum of 10 degrees", function() {
     for(var x = 0; x < 10; x++) {
       thermostat.decreaseTemp();
     }
@@ -26,11 +25,10 @@ describe("Thermostat", function() {
   });
 
   describe("temperature changes", function() {
-
     it("can reset the temperature", function(){
-      thermostat.minTemp;
-      thermostat.reset;
-      expect(thermostat.temp).toEqual(20)
+      thermostat.minTemp();
+      thermostat.reset();
+      expect(thermostat.temp).toEqual(20);
     });
 
     it("can increase the temperature with the increaseTemp function", function() {
@@ -42,11 +40,9 @@ describe("Thermostat", function() {
       thermostat.decreaseTemp();
       expect(thermostat.temp).toEqual(19);
     });
-
   });
 
   describe("power saver", function() {
-
     it("if power saver is off, the maximum temp is 32", function(){
       thermostat.powerSaverOff();
       expect(thermostat.maxTemp).toEqual(32);
@@ -54,9 +50,7 @@ describe("Thermostat", function() {
 
     it("if power saver is on, the maximum temp is 25", function(){
       thermostat.powerSaverOn();
-      expect(thermostat.maxTemp).toEqual(25)
+      expect(thermostat.maxTemp).toEqual(25);
     });
-
   });
-
 });

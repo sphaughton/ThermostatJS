@@ -4,30 +4,29 @@
 <link rel="stylesheet" href="css/style.css">
 <link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
 <font>
-
 <head>
   <title>Thermostat</title>
+  <div class="inset">
 </head>
 
 <body>
-
-  <p>
-  <div class="inset">
-    <span><div id='temperature'></div>
-      <h2>D E G R E E S</h2><br>
-
-      <a href="#" class='increaseTemp button'>+</a> <b>||</b> <a href="#" class ='decreaseTemp button'>-</a><br>
-      <a href="#" class='reset button'>reset</a><br>
-      power saver: 
-      <a href="#" class='powerSaverOn button'>on</a> || <a href="#" class='powerSaverOff button'>off</a>
-    </span></p>
+  <div class="font">
+  <h5>
+    <a href="#" class='increaseTemp button'>+</a> <b> | </b> <a href="#" class ='decreaseTemp button'>-</a><br>
+    <a href="#" class='reset button'>reset</a><br>
   </div>
-</div>
+  
+  <h1>
+    <div id='temperature'></div>
+  </h1>
 
-  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="js/Thermostat.js"></script>
-  <script src="js/jquery.js"></script>
+  power saver mode:<br>
+    <a href="#" class='powerSaverOn button'>on</a> | <a href="#" class='powerSaverOff button'>off</a>
+  </h5>
+  </div>
 
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/Thermostat.js"></script>
+<script src="js/jquery.js"></script>
 </body>
-</font>
 </html>
