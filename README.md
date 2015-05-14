@@ -17,4 +17,4 @@ To Do
 ------
 
 - [ ] Power Saver mode does not automatically jump to 25 when turned on
-- [ ] 
+- [ ] Travis CI integration
